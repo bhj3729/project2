@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                String name = e1.getText().toString();
+                String number = e2.getText().toString();
+                String subject = e3.getText().toString();
+
+
             }
         });
     }
