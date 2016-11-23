@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 String number = e2.getText().toString();
                 String subject = e3.getText().toString();
 
-
+                Toast.makeText(getApplicationContext(),
+                        name + "님의 학번은 " + number + "이고, 좋아하는 과목은 " + subject + "입니다.",
+                               Toast.LENGTH_SHORT).show();
             }
         });
     }
